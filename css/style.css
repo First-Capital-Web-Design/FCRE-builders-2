@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: grey;
+  /*color: grey;*/
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -32,9 +32,9 @@ a:hover {
 a:focus, a:active {
   outline: none;
 }
-a:visited{
+/*a:visited{
   color: white;
-}
+}*/
 p, span {
   margin-bottom: 1.5em;
   font-size: 20px;
