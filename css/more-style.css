@@ -37,14 +37,14 @@ a {
 }
 .scroll-navbar{
   position: fixed;
-  top: -72px;
+  top: -80px;
   left: 0;
   width: 100vw;
-  height: 70px;
+  height: 80px;
   background-color: white;
   z-index: 5;
   text-align: right;
-  padding: 17px;
+  padding: 22px 40px;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, .7);
   -webkit-transition: top .5s;
 }
@@ -84,17 +84,17 @@ div.nav-scroll a:hover{
   -webkit-transition: height 2s, width 2s, background-image .2s;
   margin-left: 0px;
   position: absolute;
-  left: 50px;
-  top:20px;
+  left: 8.3%;
+  top:50px;
   z-index: 5;
 }
 .logo-small-nav{
   width: 180px;
   height: 60px;
   position: absolute;
-  left: 20px;
-  top: 10px;
-  background-image: url(https://github.com/First-Capital-Web-Design/FCRE-builders-1/blob/master/images/fcre-builders-low-res.png?raw=true);
+  left: 40px;
+  top: 15px;
+  background-image: url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/fcre-builders-low-res-blue.png?raw=true);
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-transition: opacity .5s;
@@ -138,17 +138,19 @@ div.nav-scroll a:hover{
 }
 .about-info{
   position: absolute;
-  width: 60%;
+  width: 41.6%;
   height: auto;
-  background-color: #444;
-  left: 20%;
-  top: 200px;
+  left: 8.3%;
+  top: 250px;
   z-index: 3;
   overflow: hidden;
-  -webkit-transition: all 2.5s ease-out;
-  transition: all 2.5s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
   color: white;
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, .7);
+  opacity: .7;
+}
+.about-info:hover{
+  opacity: 1;
 }
 .about-info p{
   color: white;
@@ -238,7 +240,7 @@ div.nav-scroll a:hover{
   position: relative;
   z-index: 2;
   width: calc(100vw - 600px);
-  margin-left: calc(280px);
+  margin-left: calc(320px);
   height: 470px;
   background: white;
   box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
@@ -284,7 +286,7 @@ div.nav-scroll a:hover{
   outline: 2px solid white;
   position: fixed;
   top: calc(150px);
-  left: 75px;
+  left: 130px;
   height: 240px;
   text-align: center;
   background-color: #154b87;
