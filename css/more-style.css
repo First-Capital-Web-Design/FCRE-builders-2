@@ -109,8 +109,8 @@ div.nav-scroll a:hover{
 .dark-overlay-wrapper{
   width: 100vw;
   height: auto;
-  padding: 100px 0;
-  background-color:rgba(0,0,0,.7);
+  padding: 0px 0 150px 0;
+  background-color:rgba(0,0,50,.85);
 
 }
 .section-head{
@@ -172,7 +172,7 @@ div.nav-scroll a:hover{
 .why-us-content{
   background-color:white;
   width: 50%;
-  padding: 20px;
+  padding: 50px;
   margin-left: 16.6%;
   float: left;
 }
@@ -181,11 +181,17 @@ div.nav-scroll a:hover{
   height: 16.6vw;
   background-color: red;
   float: left;
-  margin-left: 4.15vw;
   border-radius: 50%;
+  background-size: cover;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, .7);
+  text-align: center;
+  padding-top: 6vw;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 .project-sample + .project-sample{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 /*ADVISOR AND BOARD*/
 .board-info-container{
