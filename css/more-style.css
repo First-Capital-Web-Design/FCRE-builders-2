@@ -23,6 +23,12 @@ h1{
 a {
   color: default;
 }
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
 .content-wrapper{
   padding: 50px;
 }
@@ -100,6 +106,13 @@ div.nav-scroll a:hover{
   -webkit-transition: opacity .5s;
 }
 /*ABOUT*/
+.dark-overlay-wrapper{
+  width: 100vw;
+  height: auto;
+  padding: 100px 0;
+  background-color:rgba(0,0,0,.7);
+
+}
 .section-head{
   width: 250px;
   float: left;
@@ -156,8 +169,23 @@ div.nav-scroll a:hover{
   color: white;
   padding: 0 20px;
 }
-.bounce {
-  @include animation(bounce 2s infinite);
+.why-us-content{
+  background-color:white;
+  width: 50%;
+  padding: 20px;
+  margin-left: 16.6%;
+  float: left;
+}
+.project-sample{
+  width: 16.6vw;
+  height: 16.6vw;
+  background-color: red;
+  float: left;
+  margin-left: 4.15vw;
+  border-radius: 50%;
+}
+.project-sample + .project-sample{
+  margin-top: 50px;
 }
 /*ADVISOR AND BOARD*/
 .board-info-container{
@@ -496,91 +524,14 @@ dl a{
 .hover-orange:hover{
   color: orange !important;
 }
-/*FILINGS AND FORMS*/
-.forms-container{
-  height: auto;
-  min-height: 150px;
-  width: 100%;
-  background-color: white;
-  margin-left: 0%;
-  position: relative;
-  margin-top: 100px;
-  border-top: 2px solid grey;
-  box-shadow: 1px 1px 6px grey;
-}
-.form-tab-container{
-  position: absolute;
-  top: -50px;
-  height: 50px;
-  width: 100%;
-}
-.form-tab{
-  width: auto;
-  height: 100%;
-  float: left;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 5px 5px 0 0;
-  background-color: white;
-  border-right: 2px solid grey;
-  border-top: 1px solid grey;
-  border-bottom: 2px solid grey;
-  cursor: pointer;
-  box-shadow: 0 -18px 25px -10px lightgrey inset, 1px -3px 7px -2px grey;
-  -webkit-transition: background-color .25s;
-}
-.form-tab-active{
-  border-bottom: 2px solid #154b87;
-  background-color: #154b87;
-  box-shadow: 1px -3px 7px -2px grey;
-  color: orange;
-  border-right: 2px solid orange;
-  border-top: 1px solid orange;
-}
-.form-head{
-  background-color: #154b87;
-  padding: 10px;
-  padding-top: 35px;
-}
-.form-head h3{
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-.form-object{
-  width: 100%;
-  height: 100px;
-  padding: 25px;
-}
-.form-object + .form-object{
-  border-top: 2px solid grey;
-}
-.form-object p{
-  color: lightgrey;
-  line-height: 13px;
-}
-.form-object a, .form-head a{
-  color: orange;
-}
-.form-object a:hover, .form-head a:hover{
-  color: #154b87;
-  text-decoration: underline;
-}
-/*NEWS*/
-.date{
-  text-decoration: overline;
-  color: orange;
-}
-.news{
-  padding: 20px;
-  border: 2px solid transparent;
-}
 @media (min-width: 1000px) {
           #fh5co-main-nav{
             margin-right: 0px !important;
             margin-top: -115px;
             float: right!important;
             position: relative;
+            padding-top: 30px;
+            padding-right: 50px;
           }
           header{
             padding-top: 10px;
