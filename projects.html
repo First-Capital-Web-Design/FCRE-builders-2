@@ -69,7 +69,7 @@
 
 	</head>
 	<body>
-		<header>
+		<header style="display: opacity: 0;">
 			<div class="container text-center">
 				<div class="fh5co-navbar-brand">
 					<a href="about.html"><div class="placeholder"></div></a>
@@ -98,7 +98,7 @@
 
 		</div>
 
-		<a href="about.html"><div class="logo"></div></a>
+		<a href="about.html" style="display: none;"><div class="logo"></div></a>
 
 		<div class="mobile-nav" style="width: 25px; height: 25px; background-image: url('https://www.newfangled.com/wp-content/uploads/2014/08/stuffcontentmgrfiles2ac67e44c30a21635f8a9d498f832bc1cmisc_resized80_313_257_hamenu.png'); background-size: 25px 25px;"></div>
 
@@ -499,7 +499,7 @@
         $(".scroll-navbar").css({"top":"0"});
     }	else
 	{
-		$(".scroll-navbar").css({"top":"-80px"});
+		$(".scroll-navbar").css({"top":"0px"});
 	}
 
 	if(y_scroll_pos > 2282) {

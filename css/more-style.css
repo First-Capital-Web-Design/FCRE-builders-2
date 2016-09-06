@@ -43,14 +43,14 @@ a {
 }
 .scroll-navbar{
   position: fixed;
-  top: -80px;
+  top: 0px;
   left: 0;
   width: 100vw;
-  height: 80px;
+  height: 100px;
   background-color: white;
   z-index: 5;
   text-align: right;
-  padding: 22px 40px;
+  padding: 30px 40px;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, .7);
   -webkit-transition: top .5s;
 }
@@ -95,8 +95,8 @@ div.nav-scroll a:hover{
   z-index: 5;
 }
 .logo-small-nav{
-  width: 180px;
-  height: 60px;
+  width: 250px;
+  height: 70px;
   position: absolute;
   left: 40px;
   top: 15px;
@@ -110,13 +110,15 @@ div.nav-scroll a:hover{
   width: 100vw;
   height: auto;
   padding: 0px 0 150px 0;
-  background-color:rgba(0,0,50,.85);
+  background-color:rgba(51, 79, 157,.85);
 
 }
 .section-head{
   width: 250px;
   float: left;
-  margin-top: 0px;
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: 30px;
 }
 .team-photo{
   width: auto;
@@ -200,7 +202,7 @@ div.nav-scroll a:hover{
   float: left;
   background-color: white;
   padding: 50px;
-  box-shadow: 1px 1px 8px grey;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, .7);
 }
 .board-member-picture{
   height: 45%;
@@ -249,6 +251,7 @@ div.nav-scroll a:hover{
 }
 .name{
   width: 100%;
+  /*margin-left: -100px;*/
   border: 1px solid grey;
   border-right: 0;
   padding: 7px 0;
