@@ -20,9 +20,6 @@ h1{
   text-transform: uppercase;
   font-size: 30px;
 }
-a {
-  color: default;
-}
 .clearfix:after {
    content: " ";
    display: block;
@@ -48,7 +45,7 @@ a {
   width: 100vw;
   height: 100px;
   background-color: white;
-  z-index: 5;
+  z-index: 6;
   text-align: right;
   padding: 30px 40px;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, .7);
@@ -133,24 +130,6 @@ div.nav-scroll a:hover{
   font-size: 17px;
   line-height: 23px;
 }
-.rule{
-  height: 2px;
-  width: 100%;
-  background-color: #4d4d33;
-  float: left;
-  margin: 70px 0 20px 0;
-  border-radius: 5px;
-}
-.arrow {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-left:-20px;
-  width: 40px;
-  height: 40px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
-  background-size: contain;
-}
 .about-info{
   position: absolute;
   width: 41.6%;
@@ -174,6 +153,7 @@ div.nav-scroll a:hover{
 .why-us-content{
   background-color:white;
   width: 50%;
+  min-height: 600px;
   padding: 50px;
   margin-left: 16.6%;
   float: left;
@@ -272,6 +252,25 @@ div.nav-scroll a:hover{
   margin-left: -10px;
   width: 215px;
 }
+/*Services*/
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+  .fade-in {
+  	opacity:0;  /* make things invisible upon start */
+  	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only .6 time */
+  	-moz-animation:fadeIn ease-in 1;
+  	animation:fadeIn ease-in 1;
+
+  	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: .6)*/
+  	-moz-animation-fill-mode:forwards;
+  	animation-fill-mode:forwards;
+
+  	-webkit-animation-duration:.6s;
+  	-moz-animation-duration:.6s;
+  	animation-duration:.6s;
+  }
 /*Projects*/
 .project-object{
   position: relative;
@@ -564,19 +563,16 @@ dl a{
             height: 150px;
             padding-top:0;
           }
-
           .fh5co-navbar-brand{
             padding-bottom: 10px !important;
           }
           header #fh5co-main-nav > ul li a {
             font-size: 15px;
           }
-
           .properties-blurb{
             width: 50%;
             top: 180px;
           }
-
           #map{
             height: calc(100vh - 150px);
           }
@@ -626,71 +622,12 @@ dl a{
           .page-head-container{
             margin-top: 0px;
           }
-
-          .property-icon{
-            width: 30.3%;
-            background-size: auto 100%;
-          }
-
-          .icon-overlay{
-            background-size: auto 100%;
-            height: 100%
-          }
-
-          .properties-head{
-            background-color: orange;
-            color: white;
-            width: 340px;
-            margin-left: calc(50% - 150px);
-            text-align: center;
-            font-size: 25px;
-            margin-top: 0;
-            margin-bottom: 60px;
-            height: 125px;
-            padding-top: 24px;
-            position: relative;
-            color: white;
-            letter-spacing: 0.2em;
-            text-align: center;
-            text-transform: uppercase;
-          }
-          .properties-head:after{
-            content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 0;
-          height: 0;
-          border-bottom: 30px solid #b3cccc;
-          border-left: 170px solid transparent;
-          border-right: 170px solid transparent;
-          }
-          .opportunity-background{
-            background-size: auto 130% !important;
-            background-repeat: no-repeat;
-          }
-          .form-object a{
-            font-size: 16px;
-          }
-          .form-object p{
-            font-size: 14px;
-            line-height:18px;
-          }
-          .form-object {
-            padding-bottom: 0;
-          }
 }
 
 @media (min-width: 568px) {
 
           .mobile-nav{
             display: none !important;
-          }
-
-          .news:hover {
-            -webkit-transition: all 1s;
-            box-shadow: 0px 4px 30px grey;
-            background-color: white !important;
           }
 
 }
@@ -703,14 +640,12 @@ dl a{
             margin-bottom: 0px;
             font-size: 15px;
           }
-
           header{
             padding-top: 20px;
             width: 100vw;
             padding-bottom: 20px;
             height: 118px;
           }
-
           .logo{
             margin-left: calc(50% - 100px);
             left: 0;
@@ -718,20 +653,16 @@ dl a{
             height: 60px;
             top: 40px;
           }
-
           header .fh5co-navbar-brand {
             padding-bottom: 0;
           }
-
           body{
             width: 100%;
             overflow-x: hidden;
           }
-
           .info-content-slided{
             top: 90px;
           }
-
           .info-content{
             font-size: 14px;
             line-height: 18px;
@@ -739,7 +670,6 @@ dl a{
             left: 12.5vw;
             width: 75vw;
           }
-
           .mobile-nav{
             display: block;
             position: absolute;
@@ -749,7 +679,6 @@ dl a{
             height: 20px;
             z-index: 6;
           }
-
           #fh5co-main-nav {
             overflow: hidden;
             height: 0px;
@@ -767,26 +696,21 @@ dl a{
           .nav-info-active{
             top: 190px !important;
           }
-
           .fh5co-table, .fh5co-table-cell, .fh5co-hero, .fh5co-parallax{
             height: 440px !important;
           }
-
          .list-terms{
            font-size: 15px;
         }
-
          .mobile-footer-text{
            font-size: 14px;
          }
          .contact-mobile{
            display: none;
          }
-
         .contact-mobile-second{
           margin-top: 0 !important;
         }
-
         .page-head-container{
           margin-top: 0px;
         }
@@ -929,37 +853,6 @@ dl a{
         }
         #fh5co-common-section{
           padding-bottom: 50px;
-        }
-        .dual{
-          width: 100%;
-          margin: 0;
-          font-size: 15px;
-        }
-        .dual-plus{
-          width: 100%;
-          font-size: 60px;
-        }
-        .daily-nav{
-          width: 100%;
-          right:0;
-          bottom:60px !important;
-          position: absolute;
-          box-shadow: 0 60px 0 #154b87 !important;
-          z-index: 4;
-        }
-        .form-object {
-          padding-bottom: 0;
-        }
-        .news h1{
-          font-size: 30px;
-        }
-        .news p{
-          font-size: 18px;
-          line-height: 25px;
-          text-align: left !important;
-        }
-        .news h3{
-          color: white;
         }
         .section-content{
           margin-top: 20px;
