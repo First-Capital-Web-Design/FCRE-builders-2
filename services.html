@@ -106,22 +106,20 @@
 
 		<div class="services-banner"></div>
 
-		<h2 class="section-head page-head" style="text-align:center; color: white; width: 200px; padding: 20px; top: 40vh; margin-left: 90px; background-color: #154b87; outline: 2px solid white; position: fixed; z-index: 5;  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);">SERVICES</h2>
-
 		<div id="" style="position: relative; margin-top: 40px; height: auto; padding: 0; width: calc(100vw - 500px); margin-left:400px; min-height: 80vh;">
 
 		</div><!-- end fh5co-common-section -->
 
-		<div class="fade-in" style="background: linear-gradient(to left, rgb(50,50,50), rgb(100,100,100)); box-shadow: 2px 7px 7px rgba(0, 0, 0, .5); padding: 30px; color: white; position: absolute; right: 0; top: 65vh; width: 66.60vw">
+		<div class="fade-in" style="background: linear-gradient(to left, rgb(50,50,50), rgb(100,100,100)); box-shadow: 2px 7px 7px rgba(0, 0, 0, .5); padding: 30px; color: white; position: absolute; right: 0; top: 65vh; width: 66.60vw; opacity: .8;">
 
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur et dui vitae euismod.
 				Suspendisse nibh augue, blandit at magna id, molestie commodo felis.
 
 		</div>
 
-		<div id="" style="position: relative; margin-top: 40px; height: auto; min-height: 80vh; padding: 0; width: calc(100vw); background: linear-gradient(rgba(0,0,0,0), rgba(51, 79, 157,.6), rgba(51, 79, 157,.85));">
+		<div id="" style="position: relative; margin-top: 40px; height: auto; min-height: 80vh; padding-top: 15vh; width: calc(100vw); background-color: #154984;">
 
-				<div class="row" style="background-color: white; box-shadow: 2px 7px 7px rgba(0, 0, 0, .5), 20px 20px 60px rgba(100, 100, 150, .2) inset; padding: 50px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 375px;">
+				<div class="row" style="padding: 50px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 237.5px; color: #d3e4f8; text-shadow: 1px 1px 3px black;">
 					<div class="">
 						<div class="">
 							<span class="number-holder"></span>
@@ -145,9 +143,23 @@
 				</div>
 		</div><!-- end fh5co-common-section -->
 
-		<div id="" style="position: relative; height: auto; min-height: 80vh; padding-bottom: 120px; width: calc(100vw); background: rgba(51, 79, 157,.85)">
+		<div id="" style="position: relative; margin-top: 0px; height: auto; min-height: 80vh; padding-top: 15vh; width: calc(100vw); background-color: #154984; background-image: url(http://media.istockphoto.com/photos/early-autumn-with-modern-residential-single-family-home-picture-id494094318?s=2048x2048); background-size: cover;">
 
-				<div class="row" style="background-color: white; box-shadow: 2px 7px 7px rgba(0, 0, 0, .5), 20px 20px 60px rgba(100, 100, 150, .2) inset; padding: 50px; width: calc(100vw - 475px); margin-left: 375px;">
+				<div class="row" style="padding: 50px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 237.5px; color: #d3e4f8; text-shadow: 1px 1px 3px black;">
+					<div class="">
+						<div class="">
+							<span class="number-holder"></span>
+							<div class="desc">
+							</div>
+
+						</div>
+					</div>
+				</div>
+		</div><!-- end fh5co-common-section -->
+
+		<div id="" style="position: relative; height: auto; min-height: 80vh; padding-bottom: 120px; width: calc(100vw); background: rgba(51, 79, 157,.85);">
+
+				<div class="row" style="background-color: white; box-shadow: 2px 7px 7px rgba(0, 0, 0, .5), 20px 20px 60px rgba(100, 100, 150, .2) inset; padding: 50px; width: calc(100vw - 475px); margin-left: 237.5px;">
 					<div class="">
 						<div class="">
 							<span class="number-holder"></span>
@@ -271,32 +283,19 @@
 	<script>
 		$(document).ready(function(){
 
-			$(".mobile-nav").click(function(){
-				$("#fh5co-main-nav").toggleClass("nav-active");
-				$(".info-button-container").toggleClass("nav-info-active");
-				$(".info-content").removeClass("info-content-slided");
-				$(".info-button").removeClass("info-button-active");
-				$(".page-footer").removeClass("slided");
-				$(".slider-button").removeClass("rotated");
-
-			});
-
-			$(".opportunity-text").hover(function(){
-					$(".opportunity-background-blue").addClass("opportunity-background-blue-active");
-					$(".opportunity-text").addClass("opportunity-text-active");
-					$(".opportunity-head").addClass("opportunity-head-active");
-					}, function(){
-					$(".opportunity-background-blue").removeClass("opportunity-background-blue-active");
-					$(".opportunity-text").removeClass("opportunity-text-active");
-					$(".opportunity-head").removeClass("opportunity-head-active");
-			});
-
 			$(".logo-small").css({"position":"fixed","top":"20px","opacity":"0"})
 			$(".nav-scroll").css({"position":"fixed","top":"20px","opacity":"0"})
+
+			var head-info-location = 0;
+
 
 			$(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = $(window).height() + 30;             // set to whatever you want it to be
+
+		if
+
+
 
     if(y_scroll_pos > scroll_pos_test) {
         $(".scroll-navbar").css({"top":"0"});

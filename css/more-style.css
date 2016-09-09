@@ -1,4 +1,7 @@
 /*GENERAL STYLES*/
+body{
+  background-size: cover;
+}
 li{
   color: #444;
   font-size: 17px;
@@ -124,10 +127,10 @@ div.nav-scroll a:hover{
 .section-content{
   margin-top: 20px;
   margin-bottom: 50px;
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   float: left;
   padding-left: 20px;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 23px;
 }
 .about-info{
@@ -254,19 +257,19 @@ div.nav-scroll a:hover{
 }
 /*Services*/
 .services-banner{
-  width: 300px;
+  width: 600px;
   height: 200px;
-  position: fixed;
-  top: 50vh;
-  left:0;
-  backgroung-image:url(images/services-banner.png);
-  background-size: container;
+  position: absolute;
+  top: 40vh;
+  left: -200px;
+  background-image:url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/services-banner.png?raw=true);
+  background-size: contain;
   background-repeat: no-repeat;
   background position: center left;
 }
-  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:.7; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:.7; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:.7; } }
 
   .fade-in {
   	opacity:0;  /* make things invisible upon start */
@@ -869,7 +872,7 @@ dl a{
           margin-top: 20px;
           width: calc(100%);
           float: left;
-          font-size: 15px;
+          font-size: 25px;
           line-height: 21px;
           padding-left: 0;
         }
