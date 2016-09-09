@@ -335,7 +335,7 @@ div.nav-scroll a:hover{
   width: 160px;
   outline: 2px solid white;
   position: fixed;
-  top: calc(150px);
+  top: calc(100vh + 15px);
   left: 130px;
   height: 240px;
   text-align: center;

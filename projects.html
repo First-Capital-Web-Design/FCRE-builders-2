@@ -69,7 +69,7 @@
 
 	</head>
 	<body>
-		<header style="display: opacity: 0;">
+		<header style="display: none; opacity: 0;">
 			<div class="container text-center">
 				<div class="fh5co-navbar-brand">
 					<a href="about.html"><div class="placeholder"></div></a>
@@ -102,7 +102,9 @@
 
 		<div class="mobile-nav" style="width: 25px; height: 25px; background-image: url('https://www.newfangled.com/wp-content/uploads/2014/08/stuffcontentmgrfiles2ac67e44c30a21635f8a9d498f832bc1cmisc_resized80_313_257_hamenu.png'); background-size: 25px 25px;"></div>
 
-		<div style="width: 100vw; height: 100vh;background-image: url(); background-size: cover; background-position: auto 100px; position: fixed; left: 0; top: 0; z-index: -1; background: linear-gradient(to right, silver, #e6e6e6, silver)"></div>
+		<div style="width: 100vw; height: 100vh;background-image: url(); background-size: cover; background-position: auto 100px; position: fixed; left: 0; top: 0; z-index: -1; background-image: url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/background-house-focus.jpg?raw=true); "></div>
+
+		<div class ="blurred-img" style="width: 100vw; height: 100vh;background-image: url(); background-size: cover; background-position: auto 100px; position: fixed; left: 0; top: 0; z-index: -1; background-image: url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/background-house-blur.jpg?raw=true); "></div>
 
 		<div class="projects-nav">
 
@@ -120,9 +122,13 @@
 
 		</div>
 
+		<div class="services-banner" style="background-image: url(images/projects-banner.png);background-size: 120% auto; top: 65vh; width: 114.15vw;"></div>
+
+		<div class="down-arrow" id="board-header" style="position: absolute; top: calc(100vh - 60px); left: calc(50% - 17px); opacity: .7; width: 34px;"><a href="#board-header" style="color: white;"><i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i></a></div>
+
 <!--NEW PROJECT-->
 
-		<div class="project-object" id="jubilee">
+		<div class="project-object" id="jubilee board-header" style="margin-top: calc(100vh + 15px)">
 
 			<div class="project-image" style="background-image: url(http://firstcapitalbuilders.com/images/frontpage/img1.jpg)">
 
@@ -502,26 +508,27 @@
 		$(".scroll-navbar").css({"top":"0px"});
 	}
 
-	if(y_scroll_pos > 2282) {
-			$(".projects-nav").css({"position":"absolute", "top":"2435px"});
-	}	else
-{
+	if(y_scroll_pos < scroll_pos_test - 165) {
+			$(".projects-nav").css({"position":"absolute", "top":"calc(100vh + 15px)"});
+	} else if(y_scroll_pos > scroll_pos_test + 2125) {
+			$(".projects-nav").css({"position":"absolute", "top":"calc(100vh + 2300px)"});
+	}	else {
 	$(".projects-nav").css({"position":"fixed","top":"calc(150px)"});
 }
 
-		if (y_scroll_pos < 570) {
+		if (y_scroll_pos < scroll_pos_test + 405) {
 				$("li").removeClass("projects-nav-active");
 				$(".projects-nav-jubilee").addClass("projects-nav-active");
-		} else if (y_scroll_pos < 1145) {
+		} else if (y_scroll_pos < scroll_pos_test + 975) {
 				$("li").removeClass("projects-nav-active");
 				$(".projects-nav-ambassador").addClass("projects-nav-active");
-		} else if (y_scroll_pos < 1710) {
+		} else if (y_scroll_pos < scroll_pos_test + 1545) {
 			$("li").removeClass("projects-nav-active");
 			$(".projects-nav-cottages").addClass("projects-nav-active");
-		} else if (y_scroll_pos < 2282) {
+		} else if (y_scroll_pos < scroll_pos_test + 2115) {
 			$("li").removeClass("projects-nav-active");
 			$(".projects-nav-tonopalo").addClass("projects-nav-active");
-		} else if (y_scroll_pos < 2500) {
+		} else if (y_scroll_pos < scroll_pos_test + 2500) {
 			$("li").removeClass("projects-nav-active");
 			$(".projects-nav-campbell").addClass("projects-nav-active");
 		}
@@ -553,6 +560,18 @@ $(".slide-arrow-left").click(function(){
 
 	console.log("hello");
 
+});
+
+$(window).scroll(function() {
+    // スクロールの位置取得
+    // Get scroll position
+    var s = $(window).scrollTop(),
+    // スクロールの値と透明度
+    // scroll value and opacity
+    opacityVal = (s / 550.0);
+    // blurの画像の透明度を0%から100％
+    // opacity value 0% to 100%
+    $('.blurred-img').css('opacity', opacityVal);
 });
 
 	});

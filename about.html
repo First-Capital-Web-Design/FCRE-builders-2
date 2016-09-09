@@ -127,11 +127,11 @@
 	</div>
 </div>
 </div><!-- end fh5co-common-section -->
-<div class="down-arrow" style="position: absolute; top: calc(100vh - 60px); left: calc(50% - 17px); opacity: .7; width: 34px;"><a href="#board-header" style="color: white;"><i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i></a></div>
+<div class="down-arrow" id="board-header" style="position: absolute; top: calc(100vh - 60px); left: calc(50% - 17px); opacity: .7; width: 34px;"><a href="#board-header" style="color: white;"><i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i></a></div>
 
 											<section id="cd-team" class="cd-section">
 												<div class="cd-container">
-													<h2>Our team</h2>
+													<h2 style="background: orange; width: 160px; margin-left: calc(50% - 80px); padding: 15px;">Our team</h2>
 													<ul>
 														<li>
 															<a href="#0" data-type="member-1">
@@ -385,7 +385,7 @@ var $root = $('html, body');
 $('a').click(function() {
 		var href = $.attr(this, 'href');
 		$root.animate({
-				scrollTop: $(href).offset().top - 120
+				scrollTop: $(href).offset().top - 50
 		}, 800, function () {
 			$(".property-icon-content").css("opacity","1");
 			$(".pop-up-background").addClass("pop-up-background-active");

@@ -117,7 +117,7 @@
 
 		</div>
 
-		<div id="" style="position: relative; margin-top: 40px; height: auto; min-height: 80vh; padding-top: 15vh; width: calc(100vw); background-color: #154984;">
+		<div id="" style="position: relative; margin-top: 40px; height: auto; min-height: 80vh; padding-top: .5vh; width: calc(100vw); background-color: #154984;">
 
 				<div class="row" style="padding: 50px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 237.5px; color: #d3e4f8; text-shadow: 1px 1px 3px black;">
 					<div class="">
@@ -126,7 +126,7 @@
 							<div class="desc">
 							</div>
 
-							<div class="section-head">General Contracting Services</div>
+							<div class="section-head" id="board-head">General Contracting Services</div>
 
 							<div class="section-content">
 								First Capital Builders is positioned to be the General Contractor
@@ -136,37 +136,6 @@
 								profitability. We have significant experience in all phases
 								of construction including infrastructure, commercial, residential,
 								and tenant improvements.
-							</div>
-
-						</div>
-					</div>
-				</div>
-		</div><!-- end fh5co-common-section -->
-
-		<div id="" style="position: relative; margin-top: 0px; height: auto; min-height: 80vh; padding-top: 15vh; width: calc(100vw); background-color: #154984; background-image: url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/background-house-blue.jpg?raw=true); background-attachment: fixed; background-size: cover; box-shadow: 0px 30px 25px -20px rgba(0,0,0,.5) inset, 0px -30px 25px -20px rgba(0,0,0,.5) inset;">
-
-				<div class="row" style="padding: 50px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 237.5px; color: #d3e4f8; text-shadow: 1px 1px 10px black; text-align: center;">
-					<div class="">
-						<div class="">
-							<span class="number-holder"></span>
-							<div class="desc">
-
-								<span style="color:white; font-size: 40px;">Suspendisse nibh augue, blandit at magna id molestie commodo felis.</span>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-		</div><!-- end fh5co-common-section -->
-
-		<div id="" style="position: relative; margin-top: 0px; height: auto; min-height: 80vh; padding-top: 2vh; width: calc(100vw); background-color: #154984;">
-
-				<div class="row" style="padding: 50px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 237.5px; color: #d3e4f8; text-shadow: 1px 1px 3px black;">
-					<div class="">
-						<div class="">
-							<span class="number-holder"></span>
-							<div class="desc">
 							</div>
 
 							<div class="section-head">Project and Construction Management</div>
@@ -302,6 +271,20 @@
 
 	<script>
 		$(document).ready(function(){
+
+			var $root = $('html, body');
+			$('a').click(function() {
+					var href = $.attr(this, 'href');
+					$root.animate({
+							scrollTop: $(href).offset().top - 50
+					}, 800, function () {
+						$(".property-icon-content").css("opacity","1");
+						$(".pop-up-background").addClass("pop-up-background-active");
+						if($(this).hasClass("myrtle")){$(".myrtle-beach-property").children(".property-icon-content").css("display", "block");}
+
+					});
+					return false;
+			});
 
 			$(".logo-small").css({"position":"fixed","top":"20px","opacity":"0"})
 			$(".nav-scroll").css({"position":"fixed","top":"20px","opacity":"0"})
