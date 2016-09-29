@@ -232,7 +232,7 @@ header {
   overflow-y: auto;
   /* smooth scrolling on mobile phones and tablets */
   -webkit-overflow-scrolling: touch;
-  background: #5c4b51;
+  background: #211551;
   z-index: 1;
   /* this how we move the author bio section off the canvas */
   -webkit-transform: translateX(270px);
