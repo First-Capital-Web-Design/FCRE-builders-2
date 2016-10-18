@@ -65,6 +65,15 @@ div.scroll-navbar a:link{
 div.nav-scroll a:hover{
   color: orange;
 }
+.down-arrow{
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 65px;
+}
 /*Stops the font flicker while loading Adobe Webfont*/
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading p, .wf-loading li, .wf-loading{
  visibility: hidden;
@@ -258,18 +267,18 @@ div.nav-scroll a:hover{
 /*Services*/
 .services-banner{
   width: 600px;
-  height: 200px;
+  height: 225px;
   position: absolute;
-  top: 40vh;
-  left: -200px;
-  background-image:url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/services-banner.png?raw=true);
+  top: calc(100vh - 375px);
+  left: -50px;
+  background-image:url(../images/services-banner.png);
   background-size: contain;
   background-repeat: no-repeat;
   background position: center left;
 }
   @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:.7; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:.7; } }
 
   .fade-in {
   	opacity:0;  /* make things invisible upon start */
@@ -293,7 +302,7 @@ div.nav-scroll a:hover{
   margin-left: calc(320px);
   height: 470px;
   background: white;
-  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
   margin-top: 40px;
   margin-bottom: 100px;
 }
@@ -313,7 +322,7 @@ div.nav-scroll a:hover{
   margin: 10px 0 30px 0px;
   width: calc(100vw - 500px);
   text-transform: none;
-  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
   float: left;
 }
 .info-button{
@@ -322,7 +331,7 @@ div.nav-scroll a:hover{
   padding: 0px 8px;
   border-radius: 50px;
   margin: 15px 10px;
-  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
   transition: all .5s;
   float: left;
   text-align: center;
@@ -333,14 +342,14 @@ div.nav-scroll a:hover{
 }
 .projects-nav{
   width: 160px;
-  outline: 2px solid white;
+  border: 2px solid white;
   position: fixed;
   top: calc(100vh + 15px);
   left: 130px;
   height: 240px;
   text-align: center;
   background-color: #154b87;
-  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
 }
 .projects-nav li a{
   color: white;

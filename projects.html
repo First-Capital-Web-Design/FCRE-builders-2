@@ -122,9 +122,9 @@
 
 		</div>
 
-		<div class="services-banner" style="background-image: url(images/projects-banner.png);background-size: 120% auto; bottom: 75px; top: auto; width: 100vw; left: 0;"></div>
+		<div class="services-banner" style="background-image: url(images/projects-banner.png); top: calc(100vh - 250px); left: -30px;"></div>
 
-		<div class="down-arrow" id="board-header" style="position: absolute; top: calc(100vh - 60px); left: calc(50% - 17px); opacity: .7; width: 34px;"><a href="#board-header" style="color: white;"><i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i></a></div>
+		<div class="down-arrow" id="board-header" style="position: absolute; top: calc(100vh - 90px); left: calc(50% - 27px);"><a href="#board-header" style="color: white;"><i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i></a></div>
 
 <!--NEW PROJECT-->
 
@@ -538,7 +538,7 @@ var $root = $('html, body');
 $('a').click(function() {
 		var href = $.attr(this, 'href');
 		$root.animate({
-				scrollTop: $(href).offset().top - 145
+				scrollTop: $(href).offset().top - 130
 		}, 800, function () {
 
 		});

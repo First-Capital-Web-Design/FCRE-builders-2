@@ -11,31 +11,6 @@
 	<meta name="description" content="First Capital Real Estate Investments" />
 	<meta name="keywords" content="first, capital, real, estate, investments" />
 
-  <!--
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="https://github.com/First-Capital-Web-Design/FCRE-trust-site-1/blob/gh-pages/images/favicon.png?raw=true">
 
@@ -127,7 +102,7 @@
 	</div>
 </div>
 </div><!-- end fh5co-common-section -->
-<div class="down-arrow" id="board-header" style="position: absolute; top: calc(100vh - 60px); left: calc(50% - 17px); opacity: .7; width: 34px;"><a href="#board-header" style="color: white;"><i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i></a></div>
+<div class="down-arrow" id="board-header" style="position: absolute; left: calc(50% - 17px); width: 55px; top: calc(100vh - 90px);"><a href="#board-header" style="color: white;"><i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i></a></div>
 
 											<section id="cd-team" class="cd-section">
 												<div class="cd-container">
@@ -359,16 +334,6 @@
 
 			});
 
-			$(".opportunity-text").hover(function(){
-					$(".opportunity-background-blue").addClass("opportunity-background-blue-active");
-					$(".opportunity-text").addClass("opportunity-text-active");
-					$(".opportunity-head").addClass("opportunity-head-active");
-					}, function(){
-					$(".opportunity-background-blue").removeClass("opportunity-background-blue-active");
-					$(".opportunity-text").removeClass("opportunity-text-active");
-					$(".opportunity-head").removeClass("opportunity-head-active");
-			});
-
 			$(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = $(window).height() + 30;             // set to whatever you want it to be
@@ -385,7 +350,7 @@ var $root = $('html, body');
 $('a').click(function() {
 		var href = $.attr(this, 'href');
 		$root.animate({
-				scrollTop: $(href).offset().top - 50
+				scrollTop: $(href).offset().top + 60
 		}, 800, function () {
 			$(".property-icon-content").css("opacity","1");
 			$(".pop-up-background").addClass("pop-up-background-active");

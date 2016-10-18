@@ -102,29 +102,32 @@
 
 		<div class="mobile-nav" style="width: 25px; height: 25px; background-image: url('https://www.newfangled.com/wp-content/uploads/2014/08/stuffcontentmgrfiles2ac67e44c30a21635f8a9d498f832bc1cmisc_resized80_313_257_hamenu.png'); background-size: 25px 25px;"></div>
 
-		<div style="width: 100vw; height: 100vh; background-image: url(http://www.luxuryhomesnorthwest.com/wp-content/gallery/street-of-dreams/big-yard-redmond-wa-home-for-sale.jpg); background-size: cover; background-position: auto 100px; position: fixed; left: 0; top: 0; z-index: -5;"></div>
+		<div style="width: 100vw; height: calc(100vh - 50px); background-image: url(http://www.luxuryhomesnorthwest.com/wp-content/gallery/street-of-dreams/big-yard-redmond-wa-home-for-sale.jpg); background-size: cover; background-position: auto 100px; position: fixed; left: 0; top: 0; z-index: -5;"></div>
 
 		<div class="services-banner"></div>
 
-		<div id="" style="position: relative; margin-top: 40px; height: auto; padding: 0; width: calc(100vw - 500px); margin-left:400px; min-height: 80vh;">
+		<div id="" style="position: relative; margin-top: 40px; height: auto; padding: 0; width: calc(100vw - 500px); margin-left:400px; height: calc(100vh - 270px);">
 
 		</div><!-- end fh5co-common-section -->
 
-		<div class="fade-in" style="background: linear-gradient(to left, rgb(50,50,50), rgb(100,100,100)); box-shadow: 2px 7px 7px rgba(0, 0, 0, .5); padding: 30px; color: white; position: absolute; right: 0; top: 65vh; width: 66.60vw;">
+
+		<!-- <div class="fade-in" style="background: linear-gradient(to left, rgb(50,50,50), rgb(100,100,100)); box-shadow: 2px 7px 7px rgba(0, 0, 0, .5); padding: 30px; color: white; position: absolute; right: 0; top: 65vh; width: 66.60vw;">
 
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur et dui vitae euismod.
 				Suspendisse nibh augue, blandit at magna id, molestie commodo felis.
 
-		</div>
+		</div> -->
 
-		<div id="" style="position: relative; margin-top: 40px; height: auto; min-height: 80vh; padding-top: .5vh; width: calc(100vw); background-color: #154984;">
+		<div id="" style="position: relative; margin-top: 0px; height: auto; min-height: 80vh; width: calc(100vw); background-color: #154984; background: linear-gradient(to right, #154b87, #0c2f55); padding-bottom: 50px;">
 
-				<div class="row" style="padding: 50px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 237.5px; color: #d3e4f8; text-shadow: 1px 1px 3px black;">
+				<div class="row" style="padding-top: 35px; width: calc(100vw - 475px); margin-left: 237.5px; color: white; text-shadow: 1px 1px 3px black;">
 					<div class="">
 						<div class="">
 							<span class="number-holder"></span>
 							<div class="desc">
 							</div>
+
+							<div class="down-arrow" id="board-header" style="margin:auto; width: 55px; height: 55px; z-index: 3; border: 3px solid white; border-radius: 50%; text-align: center; vertical-align: center; line-height: 65px;margin-bottom: 100px;"><a href="#board-header" style="color: white;"><i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i></a></div>
 
 							<div class="section-head" id="board-head">General Contracting Services</div>
 
@@ -177,9 +180,9 @@
 				</div>
 		</div><!-- end fh5co-common-section -->
 
-		<div id="" style="position: relative; margin-top: 0px; height: auto; min-height: 80vh; padding-top: 15vh; width: calc(100vw); background-color: #154984; background-image: url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/background-house-blue2.jpg?raw=true); background-attachment: fixed; background-size: cover; box-shadow: 0px 30px 25px -20px rgba(0,0,0,.5) inset, 0px -30px 25px -20px rgba(0,0,0,.5) inset;">
+		<div id="" style="position: relative; margin-top: 0px; height: auto; min-height: 60vh; padding-top: 15vh; width: calc(100vw); background-color: #154984; background-image: url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/background-house-blue2.jpg?raw=true); background-attachment: fixed; background-size: cover; box-shadow: 0px 30px 25px -20px rgba(0,0,0,.5) inset, 0px -30px 25px -20px rgba(0,0,0,.5) inset;">
 
-				<div class="row" style="padding: 50px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 237.5px; color: #d3e4f8; text-shadow: 1px 1px 10px black; text-align: center;">
+				<div class="row" style="padding: 0px; margin-top: 60px; width: calc(100vw - 475px); margin-left: 237.5px; color: #d3e4f8; text-shadow: 1px 1px 10px black; text-align: center;">
 					<div class="">
 						<div class="">
 							<span class="number-holder"></span>
@@ -272,11 +275,33 @@
 	<script>
 		$(document).ready(function(){
 
+						$(".mobile-nav").click(function(){
+							$("#fh5co-main-nav").toggleClass("nav-active");
+							$(".info-button-container").toggleClass("nav-info-active");
+							$(".info-content").removeClass("info-content-slided");
+							$(".info-button").removeClass("info-button-active");
+							$(".page-footer").removeClass("slided");
+							$(".slider-button").removeClass("rotated");
+
+						});
+
+						$(window).on('scroll', function() {
+			    var y_scroll_pos = window.pageYOffset;
+			    var scroll_pos_test = $(window).height() + 30;             // set to whatever you want it to be
+
+			    if(y_scroll_pos > scroll_pos_test) {
+			        $(".scroll-navbar").css({"top":"0"});
+			    }	else
+				{
+					$(".scroll-navbar").css({"top":"0px"});
+				}
+			});
+
 			var $root = $('html, body');
 			$('a').click(function() {
 					var href = $.attr(this, 'href');
 					$root.animate({
-							scrollTop: $(href).offset().top - 50
+							scrollTop: $(href).offset().top - 0
 					}, 800, function () {
 						$(".property-icon-content").css("opacity","1");
 						$(".pop-up-background").addClass("pop-up-background-active");
@@ -285,35 +310,6 @@
 					});
 					return false;
 			});
-
-			$(".logo-small").css({"position":"fixed","top":"20px","opacity":"0"})
-			$(".nav-scroll").css({"position":"fixed","top":"20px","opacity":"0"})
-
-			var head-info-location = 0;
-
-
-			$(window).on('scroll', function() {
-    var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = $(window).height() + 30;             // set to whatever you want it to be
-
-		if
-
-
-
-    if(y_scroll_pos > scroll_pos_test) {
-        $(".scroll-navbar").css({"top":"0"});
-    }	else
-	{
-		$(".scroll-navbar").css({"top":"0px"});
-	}
-
-	if(y_scroll_pos > ($(window).height()*1.61 - 150)) {
-			$(".page-head").css({"position":"absolute", "top": ($(window).height()*1.83) + "px"});
-	}	else
-{
-	$(".page-head").css({"position":"fixed","top":"calc(40vh)"});
-}
-});
 
 	});
 
