@@ -119,7 +119,7 @@ div.nav-scroll a:hover{
   width: 100vw;
   height: auto;
   padding: 0px 0 150px 0;
-  background-color:rgba(51, 79, 157,.85);
+  background-color:rgba(80, 80, 80, .85);
 
 }
 .section-head{
@@ -139,8 +139,8 @@ div.nav-scroll a:hover{
   width: calc(100% - 250px);
   float: left;
   padding-left: 20px;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .about-info{
   position: absolute;
@@ -169,6 +169,7 @@ div.nav-scroll a:hover{
   padding: 50px;
   margin-left: 16.6%;
   float: left;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 .project-sample{
   width: 16.6vw;
@@ -269,8 +270,8 @@ div.nav-scroll a:hover{
   width: 600px;
   height: 225px;
   position: absolute;
-  top: calc(100vh - 375px);
-  left: -50px;
+  top: 50px;
+  left: -90px;
   background-image:url(../images/services-banner.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -396,13 +397,7 @@ div.nav-scroll a:hover{
 .project-info a:hover{
   color: #444;
 }
-.remove{
-  color: orange;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  cursor: pointer;
-}
+
 .slide-arrow-right{
   position: absolute;
   top: 200px;
@@ -440,121 +435,6 @@ div.nav-scroll a:hover{
   overflow: hidden;
 }
 /**/
-td, th {
-    border: 1.5px solid #154b87;
-    padding-left: 8px;
-    color: grey;
-}
-table{
-  width: 100%;
-}
-.tiny-table{
-  color: orange;
-  font-size: 10px;
-}
-td .tiny-table{
-  color: orange;
-  font-size: 12px;
-  vertical-align: top;
-}
-.icon-head{
-  width: 300px;
-  height: 60px;
-  background-color: orange;
-  position: absolute;
-  padding: 10px;
-  bottom: -25px;
-  -webkit-transition: all .35s ease-out;
-  left: 0;
-}
-.icon-overlay{
-  background-image: url(http://fcretrust.com/assets/urti-properties/TildenProperty0.jpg);
-  height: 165px;
-  width: 100%;
-  background-size: auto 165px;
-  background-position: top;
-  background-repeat: no-repeat;
-  opacity: 0;
-  -webkit-transition: all .35s ease-out;
-}
-.property-icon:hover .icon-head{
-  bottom: 0;
-  background-color:#154b87;
-}
-.property-icon:hover .icon-overlay{
-  opacity: 1;
-}
-.icon-head h4 {
-  color: white;
-  font-size: 17px;
-}
-.icon-head p{
-  color: orange;
-  line-height: 0;
-  font-size: 15px;
-  margin-top: -18px;
-}
-.slideshow-container{
-  width: 100%;
-  height: 268px;
-  margin-bottom: 20px;
-}
-.slide-object{
-  width: 20%;
-  height: 100%;
-  background-size: 100% auto;
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  float: left;
-  height: 50%;
-}
-.slide-object+.slide-object{
-  margin-left: 10px;
-}
-.slide-object-active{
-  width: 50%;
-  height: 100%;
-}
-.property{
-  float: left;
-}
-.continue-button:hover{
-  background-color: orange;
-  color: #154b87;
-}
-.investing p{
-  font-size: 16px;
-}
-header{
-  position: relative;
-  z-index: 5;
-  -webkit-transition: height 1.5s;
-}
-.visible{
-  display: block;
-}
-.no-scroll{
-  overflow: hidden;
-}
-dl{
-  margin-bottom: 5px;
-}
-dl a{
-  color: white;
-}
-.shadow{
-  box-shadow: 0px 0px 0px -3px transparent;
-  width: 100%;
-  padding-bottom: 10px;
-  -webkit-transition: box-shadow .5s ease-out;
-}
-.shadow:hover{
-  box-shadow: 0px 0px 15px 0px orange;
-  color: orange !important;
-}
-.hover-orange:hover{
-  color: orange !important;
-}
 @media (min-width: 1000px) {
           #fh5co-main-nav{
             margin-right: 0px !important;
